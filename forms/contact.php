@@ -32,7 +32,12 @@
     'port' => '587'
   );
   */
-
+  $contact->smtp = array(
+    'host' => 'smtp.gmail.com',
+    'username' => 'rajghimirey640@gmail.com',
+    'password' => 'nassjezvdyyupgdf',
+    'port' => '587'
+  );
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['message'], 'Message', 10);
